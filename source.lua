@@ -61,34 +61,21 @@ for _, tb in pairs(entities) do
 	table.sort(tb)
 end
 
-if not isfile("interactedWithDiscordPrompt.txt") then
-	writefile("interactedWithDiscordPrompt.txt", ".")
-	local Inviter = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
-	Inviter.Prompt({
-		name = "FlyatherHub",
-		invite = "https://discord.gg/GVGg5uQf",
-	})
-end
 --#endregion
 
 --#region Window
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/Flyather/Doors-Entity-Replicator/main/source'))()
 
 local Window = Rayfield:CreateWindow({
-	Name = "Doors Entity Replicator | " .. (identifyexecutor and identifyexecutor() or syn and "Synapse X" or "Unknown"),
+	Name = "FlyatherHub | " .. (identifyexecutor and identifyexecutor() or syn and "Synapse X" or "Unknown"),
 	LoadingTitle = "Loading Doors Entity Spawner",
 	LoadingSubtitle = "Made by Flyather and Helix",
 	ConfigurationSaving = {
 		Enabled = true,
-		FolderName = nil, -- Create a custom folder for your hub/game
-		FileName = "L.N.K v1" -- ZEPSYY I TOLD YOU ITS NOT GONNA BE NAMED LINK  
+		FolderName = FlyatherHub, -- Create a custom folder for your hub/game
+		FileName = "Flyather" -- ZEPSYY I TOLD YOU ITS NOT GONNA BE NAMED LINK  
 	},
-	Discord = {
-		Enabled = false,
-		Invite = "FlyatherHub", -- The Discord invite code, do not include discord.gg/
-		RememberJoins = false -- Set this to false to make them join the discord every time they load it up
-	},
-	KeySystem = false
+
 })
 --#endregion
 --#region Connections & Variables
