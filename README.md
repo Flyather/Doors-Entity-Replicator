@@ -1,5 +1,5 @@
 # Doors Entity Replicator
-**Script**: `loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua")()`
+**Script**: `loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/FlyatherHub/main/source.lua")()`
 ## Credits
 * spongus, Main Developer
 * Zepsyy, Helper (Created vitamins, entity configuration tab and crucifix)
