@@ -65,19 +65,19 @@ if not isfile("interactedWithDiscordPrompt.txt") then
 	writefile("interactedWithDiscordPrompt.txt", ".")
 	local Inviter = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
 	Inviter.Prompt({
-		name = "Zepsyy's Exploiting Community",
-		invite = "discord.gg/scripters",
+		name = "FlyatherHub",
+		invite = "https://discord.gg/GVGg5uQf",
 	})
 end
 --#endregion
 
 --#region Window
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/FlyatherHub/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
 	Name = "Doors Entity Replicator | " .. (identifyexecutor and identifyexecutor() or syn and "Synapse X" or "Unknown"),
 	LoadingTitle = "Loading Doors Entity Spawner",
-	LoadingSubtitle = "Made by Zepsyy and Spongus",
+	LoadingSubtitle = "Made by Flyather and Helix",
 	ConfigurationSaving = {
 		Enabled = true,
 		FolderName = nil, -- Create a custom folder for your hub/game
@@ -348,14 +348,14 @@ publicServers:CreateButton({
 	Callback = function()
 		game.Players.LocalPlayer:Kick("\nJoining Special Server... Please Wait")
 		wait();
-		(queue_on_teleport or syn and syn.queue_on_teleport)("loadstring(game:HttpGet\"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua\")()")
+		(queue_on_teleport or syn and syn.queue_on_teleport)("loadstring(game:HttpGet\"https://raw.githubusercontent.com/sponguss/FlyatherHub/main/source.lua\")()")
 		game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
 	end
 })
 publicServers:CreateButton({
 	Name = "Free Revive",
 	Callback = function()
-		(queue_on_teleport or syn and syn.queue_on_teleport)("loadstring(game:HttpGet\"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua\")()")
+		(queue_on_teleport or syn and syn.queue_on_teleport)("loadstring(game:HttpGet\"https://raw.githubusercontent.com/sponguss/FlyatherHub/main/source.lua\")()")
 		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
 	end
 })
@@ -378,7 +378,7 @@ publicServers:CreateInput({
 		for _, server in pairs(tb.data) do
 			for _, player in pairs(server.players) do
 				if player.name == Text or player.UserId == Text then
-					(queue_on_teleport or syn and syn.queue_on_teleport)("loadstring(game:HttpGet\"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua\")()")
+					(queue_on_teleport or syn and syn.queue_on_teleport)("loadstring(game:HttpGet\"https://raw.githubusercontent.com/sponguss/FlyatherHub/main/source.lua\")()")
 					game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, server.id, game.Players.LocalPlayer)
 				end
 			end
@@ -390,7 +390,7 @@ publicServers:CreateInput({
 	PlaceholderText = "Insert Server Identification",
 	RemoveTextAfterFocusLost = false,
 	Callback = function(Text)
-		(queue_on_teleport or syn and syn.queue_on_teleport)("loadstring(game:HttpGet\"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua\")()")
+		(queue_on_teleport or syn and syn.queue_on_teleport)("loadstring(game:HttpGet\"https://raw.githubusercontent.com/sponguss/FlyatherHubr/main/source.lua\")()")
 		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, Text, game.Players.LocalPlayer)
 	end,
 })
@@ -1023,12 +1023,12 @@ table.sort(toolList)
 local toolFuncs = {
 	["Skeleton Key"] = function()
 		if not isfile("skellyKey.rbxm") then
-			writefile("skellyKey.rbxm", game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/skellyKey.rbxm")
+			writefile("skellyKey.rbxm", game:HttpGet"https://raw.githubusercontent.com/sponguss/FlyatherHubr/main/skellyKey.rbxm")
 		end
 		local keyTool = game:GetObjects((getcustomasset or getsynasset)("skellyKey.rbxm"))[1]
 		keyTool:SetAttribute("uses", 5)
 		local function setupRoom(room)
-			local thing = loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/skellyKeyRoomRep.lua")()
+			local thing = loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/FlyatherHub/main/skellyKeyRoomRep.lua")()
 			local newdoor = thing.CreateDoor({
 				CustomKeyNames = {
 					"SkellyKey"
